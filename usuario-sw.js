@@ -1,5 +1,5 @@
 const CACHE = "laranjeiras-usuario-v1";
-const ASSETS = ["./usuario.html", "./usuario.css", "./usuario.js", "./firebase-config-usuario.js", "./usuario-manifest.json", "./icon-admin.png", "./icons/icon-192.png", "./icons/icon-512.png"];
+const ASSETS = ["./index.html", "./usuario.css", "./usuario.js", "./firebase-config-usuario.js", "./usuario-manifest.json", "./icon-admin.png", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)));
